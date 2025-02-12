@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML</title>
+</head>
+<body>
+    <h1>Welcome to My Page</h1>
+    <p>This is a simple HTML page with an embedded script.</p>
+    
+    <script>
+        !function(e,t,a){
+            var c=e.head||e.getElementsByTagName("head")[0],
+                n=e.createElement("script");
+            n.async=!0, n.defer=!0, n.type="text/javascript",
+            n.src=t+"/static/js/widget.js?config="+JSON.stringify(a),
+            c.appendChild(n)
+        }(document,"https://app.engati.com",{
+            bot_key:"210fdcb83b4e4911",
+            welcome_msg:true,
+            branding_key:"default",
+            server:"https://app.engati.com",
+            e:"p"
+        });
+    </script>
+</body>
+</html>
